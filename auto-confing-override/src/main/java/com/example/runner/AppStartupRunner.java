@@ -2,11 +2,13 @@ package com.example.runner;
 
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 
 @Component
+@Order(3)
 public class AppStartupRunner implements CommandLineRunner {
 
     private final DataSource dataSource;
